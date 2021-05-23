@@ -2,7 +2,7 @@ import React from "react";
 
 class CartItem extends React.Component {
   render() {
-    console.log("this.props", this.props);
+    // console.log("this.props", this.props);
     const { price, title, qty } = this.props.product;
     return (
       <div className="cart-item">
@@ -25,7 +25,7 @@ class CartItem extends React.Component {
               alt="decrease"
               className="action-icon"
               src="https://image.flaticon.com/icons/png/512/992/992683.png"
-              onClick={this.decreaseQuantity}
+              onClick={() => this.props.onDecreaseQuantity(this.props.product)}
             ></img>
             <img
               alt="delete"
