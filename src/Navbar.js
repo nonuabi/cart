@@ -1,4 +1,3 @@
-import { findLastIndex } from "lodash";
 import React from "react";
 const Navbar = (props) => {
   return (
