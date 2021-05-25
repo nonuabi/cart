@@ -42,6 +42,7 @@ class App extends React.Component {
       .onSnapshot((snapshot) => {
         snapshot.docs.map((doc) => {
           // console.log(doc.data());
+          return "";
         });
         const products = snapshot.docs.map((doc) => {
           const data = doc.data();
@@ -100,7 +101,7 @@ class App extends React.Component {
       });
   };
   handleDeleteProduct = (id) => {
-    const { products } = this.state;
+    // const { products } = this.state;
 
     // const items = products.filter((item) => item.id !== id);
     // console.log(items);
@@ -170,7 +171,7 @@ class App extends React.Component {
         />
         {loading && <h1>Loading Products...</h1>}
         <div style={{ padding: 10, fontSize: 20 }}>
-          Total:{this.getCartTotal()}
+          <h4 style={{ margin: 0 }}>Total : {this.getCartTotal()}</h4>
         </div>
       </div>
     );
