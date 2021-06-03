@@ -1,4 +1,4 @@
-# Cart using React App
+# Cart using Reac.js
 
 
 ### Labtop based view
