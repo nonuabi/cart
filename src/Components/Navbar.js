@@ -1,14 +1,16 @@
 import React from "react";
 const Navbar = (props) => {
   return (
-    <div style={styles.nav}>
-      <div style={styles.cartIconContainer}>
-        <img
-          style={styles.cardIcon}
-          src="https://image.flaticon.com/icons/png/512/1170/1170678.png"
-          alt="cart-icon"
-        ></img>
-        <span style={styles.cartCount}>{props.count}</span>
+    <div className="nav-container">
+      <div id="nav" style={styles.nav}>
+        <div style={styles.cartIconContainer}>
+          <img
+            style={styles.cardIcon}
+            src="https://image.flaticon.com/icons/png/512/1170/1170678.png"
+            alt="cart-icon"
+          ></img>
+          <span style={styles.cartCount}>{props.count}</span>
+        </div>
       </div>
     </div>
   );
@@ -20,7 +22,8 @@ const styles = {
     marginRight: 20,
   },
   nav: {
-    height: 70,
+    height: 60,
+    width: 500,
     background: "#4267b2",
     display: "flex",
     justifyContent: "flex-end",

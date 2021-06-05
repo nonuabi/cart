@@ -170,8 +170,10 @@ class App extends React.Component {
           onDeleteProduct={this.handleDeleteProduct}
         />
         {loading && <h1>Loading Products...</h1>}
-        <div style={{ padding: 10, fontSize: 20 }}>
-          <h4 style={{ margin: 0 }}>Total : {this.getCartTotal()}</h4>
+        <div className="footer_div">
+          <div className="total-div">
+            <h4 style={{ margin: 0 }}>Total : {this.getCartTotal()}</h4>
+          </div>
         </div>
       </div>
     );
